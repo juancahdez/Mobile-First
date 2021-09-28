@@ -54,7 +54,7 @@ header img {
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 40px;
+    margin-top: 40px;  /*Con esto separamos un poco la imagen del texto*/
     text-align: center;
     align-self: center;
 }
@@ -233,4 +233,20 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.currency--table-date {
+    width: max-content; /*Para evitar el desbordamiento del texto */
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+  }
+
+.currency--table-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300; /*Esto para cortar esa herencia que viene desde el padre*/
 }
