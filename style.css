@@ -250,3 +250,46 @@ main{
     color: var(--warm-black);
     font-weight: 300; /*Esto para cortar esa herencia que viene desde el padre*/
 }
+
+.main--product-detail {
+    position: relative;     /*Es importante que este este posicion relative para que despues la imagen con position absolute pueda tomar de refe4rencia a este*/
+    width: 100%;
+    min-width: 320px; /*Para que no se haga mas pequeño que eso*/
+    height: auto;
+    padding: 20px 10px; /*Conesto se crea el espacio entre las tarjetas*/
+    background: var(--warm-black);
+}
+
+.product--detail-batata-logo {
+    position: absolute; /*Este es necesario con el position relative de la anterior clase para que pueda existir entre las dos secciones, hay que asegurar el padre directo para poder delimitarlo de es manera*/
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('./assets/icons/batata.svg');
+}
+
+.pruduct--detail-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.pruduct--detail-title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.pruduct--detail-title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
