@@ -366,3 +366,73 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* tercera tarjeta */
+
+.main--product-detail-third {
+    width: 100%;
+    min-width: 320px; /*Para que no se haga mas pequeño que eso*/
+    height: auto;
+    /* padding: 20px 10px; Conesto se crea el espacio entre las tarjetas */
+    background: var(--warm-black);
+}
+
+.product--detail-card-third {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 15px;  /*Se usa para posicionar su contenido*/
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    position: relative;
+    bottom: 35px;
+}
+
+.product--detail-card-third .dolar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./assets/icons/dollar-sign.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* cuarta tarjeta */
+
+.main--product-detail-four {
+    width: 100%;
+    min-width: 320px; /*Para que no se haga mas pequeño que eso*/
+    height: auto;
+    padding: 20px 10px 0; /*Conesto se crea el espacio entre las tarjetas*/
+    background: var(--warm-black);
+}
+
+.product--detail-card-four {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 15px;  /*Se usa para posicionar su contenido*/
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    position: relative;
+    bottom: 35px;
+}
+
+.product--detail-card-four .check-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url(./assets/icons/check-circle.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
