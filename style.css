@@ -168,6 +168,15 @@ main{
     color: var(--bitcoin-orange);
 }
 
+.main--currency-table .commissions--table-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color:#1A9AF7;
+}
+
+
 .currency--table-container {
     width: 90%;
     min-width: 230px;
@@ -244,7 +253,23 @@ main{
     border-radius: 8px;
   }
 
-.currency--table-date p {
+  .currency--table-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300; /*Esto para cortar esa herencia que viene desde el padre*/
+}
+
+.commissions--table-date {
+    width: max-content; /*Para evitar el desbordamiento del texto */
+    height: 30px;
+    margin: 15px auto 0;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+
+.commissions--table-date p {
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-black);
@@ -587,7 +612,7 @@ main{
       min-width: 190px;  /*La tarjeta los mas pequeño que sera es eso*/
       max-width: 300px;   /*La tarjeta no se hara mas grande de 300px*/
       height: 250px;
-      margin: 50px 20px 0;
+      margin: 50px 5px 0;
       padding: 0 15px;
       background-color: var(--just-white);
       border-radius: 15px;
