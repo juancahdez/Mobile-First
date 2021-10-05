@@ -421,13 +421,22 @@ main{
     color: #757575;
 }
 
+.plans--container-slider {
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .plans--container-card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;  /*La tarjeta los mas pequeño que sera es eso*/
+    min-width: 190px;  /*La tarjeta los mas pequeño que sera es eso*/
     max-width: 300px;   /*La tarjeta no se hara mas grande de 300px*/
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -499,10 +508,10 @@ main{
 .plans--container-card-2 {
     position: relative;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -575,10 +584,10 @@ main{
   .plans--container-card-3 {
       position: relative;
       width: 70%;
-      min-width: 230px;  /*La tarjeta los mas pequeño que sera es eso*/
+      min-width: 190px;  /*La tarjeta los mas pequeño que sera es eso*/
       max-width: 300px;   /*La tarjeta no se hara mas grande de 300px*/
       height: 250px;
-      margin: 50px auto 0;
+      margin: 50px 5px 0;
       padding: 0 15px;
       background-color: var(--just-white);
       border-radius: 15px;
